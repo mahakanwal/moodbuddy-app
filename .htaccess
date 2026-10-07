@@ -1,0 +1,5 @@
+# Protect secrets and internals (works on XAMPP / shared hosting too)
+<FilesMatch "^(\.env.*|composer\.(json|lock)|Dockerfile|render\.yaml|.*\.sql|.*\.md)$">
+    Require all denied
+</FilesMatch>
+Options -Indexes
